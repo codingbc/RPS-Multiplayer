@@ -1,18 +1,17 @@
 $(function() {
-    $('#startGame').modal('show');  // Open the Bootrap 4 modal on start
+    $('#startGame').modal('show');  
 
-    // Initialize Firebase
-    const config = {
-        apiKey: "AIzaSyAjFVg3kJbDmAhjdxTarhD4d7u0tR7xabs",
-        authDomain: "rps-homework-a5b81.firebaseapp.com",
-        databaseURL: "https://rps-homework-a5b81.firebaseio.com",
-        projectId: "rps-homework-a5b81",
-        storageBucket: "",
-        messagingSenderId: "648767764205"
-    };
+ // Initialize Firebase
+ var config = {
+    apiKey: "AIzaSyDcztrphqYUtnoCly1s3Cxabuytprx3Ows",
+    authDomain: "rps-homework-1ed6f.firebaseapp.com",
+    databaseURL: "https://rps-homework-1ed6f.firebaseio.com",
+    projectId: "rps-homework-1ed6f",
+    storageBucket: "rps-homework-1ed6f.appspot.com",
+    messagingSenderId: "838989090973"
+  };
   firebase.initializeApp(config);
 
-    // Reference the database
     const db = firebase.database();
 
     // Firebase Reference collections
